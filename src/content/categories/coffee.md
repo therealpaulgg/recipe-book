@@ -1,5 +1,5 @@
 ---
 title: Coffee
-excerpt: Better than alchohol
+excerpt: Better than alcohol
 image: coffee.jpg
 ---
