@@ -3,7 +3,9 @@
     export async function load({ params, fetch }) {
         const slug = params.slug;
         const category = params.category;
-        const recipe = await fetch(`${base}/category/${category}/recipe/${slug}.json`).then((r) => r.json());
+        const recipe = await fetch(`${base}/category/${category}/recipe/${slug}.json`).then((r) =>
+            r.json()
+        );
         return {
             props: { recipe }
         };
@@ -17,6 +19,8 @@
     import Card from "../../../../components/Card.svelte";
     import Step from "../../../../components/Step.svelte";
     import Back from "../../../../components/Back.svelte";
+    import RatingScale from "../../../../components/RatingScale.svelte";
+    import Rating from "../../../../components/Rating.svelte";
 </script>
 
 <svelte:head>
@@ -25,9 +29,14 @@
 
 <Back />
 
-<div class="bg-zinc-700 p-2 rounded my-2">
-    <h2 class="m-0">{recipe.metadata.title}</h2>
-    <p class="mt-1 mb-2 italic">{recipe.metadata.excerpt}</p>
+<RatingScale />
+
+<div class="bg-zinc-700 p-2 rounded my-2 flex flex-col">
+    <div>
+        <h2 class="m-0">{recipe.metadata.title}</h2>
+        <p class="my-1 italic">{recipe.metadata.excerpt}</p>
+    </div>
+    <Rating rating={recipe.metadata.rating} />
 </div>
 
 {#if recipe.metadata.ingredients}

@@ -14,10 +14,7 @@
     export let category;
     export let hover: boolean = false;
     import Tag from "../components/Tag.svelte";
-    import chroma from "chroma-js";
-
-    const scale = chroma.scale(["#eb4446", "#f29d0d", "fae48a", "#48dc82"]).domain([1, 10]);
-    const color = scale(recipe.metadata.rating);
+    import Rating from "../components/Rating.svelte";
 </script>
 
 <div class={`bg-zinc-700 shadow-lg h-full rounded  ${hover ? "hover:bg-zinc-500" : ""}`}>
@@ -36,8 +33,7 @@
             </div>
             <div>
                 {#if recipe.metadata.rating}
-                    <div>Rating: {recipe.metadata.rating}</div>
-                    <div class="w-full border-2" style={`border-color: ${color}`} />
+                    <Rating rating={recipe.metadata.rating} />
                 {/if}
             </div>
         </div>
