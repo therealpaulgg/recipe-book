@@ -1,0 +1,16 @@
+---
+excerpt: the OG non-frozen daiquiri
+title: Cosmopolitan
+category: cocktails
+
+ingredients:
+- 0.5oz simple syrup
+- 1.5oz white rum
+- 1oz lime juice
+
+directions:
+- Pour into a shaker with ice and shake
+- strain into a chilled martini glass
+---
+
+It's not blended.
