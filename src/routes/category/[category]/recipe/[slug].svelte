@@ -2,7 +2,8 @@
     import { base } from "$app/paths";
     export async function load({ params, fetch }) {
         const slug = params.slug;
-        const recipe = await fetch(`${base}/recipe/${slug}.json`).then((r) => r.json());
+        const category = params.category;
+        const recipe = await fetch(`${base}/category/${category}/recipe/${slug}.json`).then((r) => r.json());
         return {
             props: { recipe }
         };
@@ -13,9 +14,9 @@
     export let recipe;
     import { faBoxes, faClipboardList, faHammer } from "@fortawesome/free-solid-svg-icons";
     import Icon from "svelte-awesome/components/Icon.svelte";
-    import Card from "../../components/Card.svelte";
-    import Step from "../../components/Step.svelte";
-    import Back from "../../components/Back.svelte";
+    import Card from "../../../../components/Card.svelte";
+    import Step from "../../../../components/Step.svelte";
+    import Back from "../../../../components/Back.svelte";
 </script>
 
 <svelte:head>

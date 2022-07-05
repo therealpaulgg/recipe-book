@@ -2,6 +2,8 @@
 excerpt: a classic
 title: Gin and Tonic
 category: cocktails
+tags: [strong]
+rating: 8
 
 ingredients:
 - 1.5oz gin

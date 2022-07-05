@@ -2,6 +2,8 @@
 excerpt: a white girl drink
 title: Cosmopolitan
 category: cocktails
+tags: [sweet]
+rating: 6
 
 ingredients:
 - 2oz citron vodka

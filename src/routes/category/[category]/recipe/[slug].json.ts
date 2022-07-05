@@ -3,9 +3,9 @@ import readingTime from "reading-time";
 import fs from "fs";
 
 export function get({ params }): { body: string } {
-    const { slug } = params;
+    const { slug, category } = params;
 
-    const { metadata, content } = process(`src/content/recipes/${slug}.md`);
+    const { metadata, content } = process(`src/content/recipes/${category}/${slug}.md`);
 
     const components = fs
         .readdirSync(`src/content/components`)

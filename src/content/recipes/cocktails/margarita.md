@@ -2,6 +2,8 @@
 excerpt: a classic
 title: Margarita
 category: cocktails
+tags: [strong, sweet]
+rating: 9
 
 ingredients:
 - 2oz tequila

@@ -2,6 +2,8 @@
 excerpt: best rum drink from Brazil
 title: Caipirinha
 category: cocktails
+tags: [exotic, strong]
+rating: 9
 
 ingredients:
 - 2 teaspoons brown sugar

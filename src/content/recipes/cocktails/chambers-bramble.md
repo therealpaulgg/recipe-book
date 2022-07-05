@@ -2,6 +2,8 @@
 excerpt: Gin and black raspberry Chambord liqueur
 title: Chamber's Bramble
 category: cocktails
+tags: [tart]
+rating: 8
 
 ingredients:
 - 1.5oz gin (Aviation Gin)

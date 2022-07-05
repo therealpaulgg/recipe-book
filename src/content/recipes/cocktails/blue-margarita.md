@@ -2,6 +2,8 @@
 excerpt: a margarita but it looks cool and tastes worse
 title: Blue Margarita
 category: cocktails
+tags: [sweet]
+rating: 7
 
 ingredients:
 - 2oz tequila

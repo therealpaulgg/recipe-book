@@ -2,6 +2,8 @@
 excerpt: some weird uber tart cocktail
 title: Citrus City
 category: cocktails
+tags: [tart, sweet]
+rating: 7
 
 ingredients:
 - 2oz aviation gin

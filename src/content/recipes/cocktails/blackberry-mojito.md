@@ -2,6 +2,8 @@
 excerpt: A standard mojito with blackberry flavoring (it's better)
 title: Blackberry Mojito
 category: cocktails
+tags: [sweet]
+rating: 10
 
 ingredients:
 - 4 teaspoons sugar

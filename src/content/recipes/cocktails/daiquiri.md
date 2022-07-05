@@ -2,6 +2,8 @@
 excerpt: the OG non-frozen daiquiri
 title: Cosmopolitan
 category: cocktails
+tags: [sweet]
+rating: 8
 
 ingredients:
 - 0.5oz simple syrup

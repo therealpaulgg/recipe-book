@@ -2,6 +2,8 @@
 excerpt: pineapple margarita...it's OK I guess
 title: Pineapple Margarita
 category: cocktails
+tags: [sweet]
+rating: 6
 
 ingredients:
 - 1.5oz tequila

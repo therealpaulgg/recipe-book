@@ -2,6 +2,8 @@
 excerpt: ;)
 title: Sex on the Beach
 category: cocktails
+tags: [sweet]
+rating: 6.9
 
 ingredients:
 - 2oz vodka
