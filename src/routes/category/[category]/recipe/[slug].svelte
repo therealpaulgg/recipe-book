@@ -36,7 +36,9 @@
         <h2 class="m-0">{recipe.metadata.title}</h2>
         <p class="my-1 italic">{recipe.metadata.excerpt}</p>
     </div>
-    <Rating rating={recipe.metadata.rating} />
+    {#if recipe.metadata.rating}
+        <Rating rating={recipe.metadata.rating} />
+    {/if}
 </div>
 
 {#if recipe.metadata.ingredients}
