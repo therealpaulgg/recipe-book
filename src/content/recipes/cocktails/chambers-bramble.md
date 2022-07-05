@@ -11,6 +11,9 @@ ingredients:
 - 0.5oz Chambord
 - 0.5oz Simple Syrup
 
+components:
+- Simple Syrup
+
 directions:
 - Pour into a shaker with ice and shake for 30 seconds
 - Strain into a martini glass and add raspberries.

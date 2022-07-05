@@ -10,6 +10,9 @@ ingredients:
 - 1.5oz white rum
 - 1oz lime juice
 
+components:
+- Simple Syrup
+
 directions:
 - Pour into a shaker with ice and shake
 - strain into a chilled martini glass

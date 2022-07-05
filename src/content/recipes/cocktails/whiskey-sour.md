@@ -10,6 +10,9 @@ ingredients:
 - 0.75oz lemon juice
 - 0.75oz simple syrup
 
+components:
+- Simple Syrup
+
 directions:
 - Pour ingredients into a shaker with ice and shake
 - Strain into a glass, on the rocks,

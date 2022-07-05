@@ -12,6 +12,9 @@ ingredients:
 - 1oz lemon juice
 - 0.5oz agave nectar/simple syrup
 
+components:
+- Simple Syrup
+
 directions:
 - Pour into a shaker with ice and shake for 30 seconds
 - Strain into a highball glass on the rocks.

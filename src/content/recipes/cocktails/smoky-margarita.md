@@ -11,6 +11,9 @@ ingredients:
 - 1oz cointreau
 - 0.75oz lime juice
 
+components:
+- Simple Syrup
+
 directions:
 - Pour into a shaker with ice and shake
 - Double strain into a glass, either on the rocks or into a margarita glass, depending on what you're feeling.
