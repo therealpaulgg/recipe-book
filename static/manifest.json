@@ -1,0 +1,17 @@
+{
+    "short_name": "Recipe Book",
+    "name": "Paul's Recipe Book",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "favicon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "background_color": "#2563eb",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#2563eb",
+    "description": "Paul's Recipe Book"
+}
