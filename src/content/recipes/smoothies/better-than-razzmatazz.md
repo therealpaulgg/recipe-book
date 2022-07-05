@@ -5,14 +5,13 @@ category: smoothies
 tags: [tart]
 
 ingredients:
-- 3/4 cup 150g mayonnaise
-- 5 tablespoons 90g ketchup
-- 1.5 tablespoons Worcestershire sauce
-- 3 cloves fresh grated garlic or 2 teaspoons garlic powder (the garlic is WAY better)
-- 1 teaspoon fresh ground black pepper
-- 1.5 teaspoon 5g salt
+- 1 cup frozen strawberry
+- 1 cup frozen raspberry
+- 1/2 cup frozen pineapple (may need to adjust)
+- 8oz orange juice
+- Something needs to be added to make this smoothie a little less thicc....
 
 directions:
-- throw into a bowl and mix it up
-- put it in the fridge
+- put ingredients into a blender and blend
+- if you have difficulty blending the frozen fruit, add water and break up inside the blender until it works properly
 ---

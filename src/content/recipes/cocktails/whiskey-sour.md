@@ -18,3 +18,5 @@ directions:
 - Strain into a glass, on the rocks,
 - Garnish with a lemon wedge
 ---
+
+One of my favorites

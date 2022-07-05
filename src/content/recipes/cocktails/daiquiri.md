@@ -1,6 +1,6 @@
 ---
 excerpt: the OG non-frozen daiquiri
-title: Cosmopolitan
+title: Daiquiri
 category: cocktails
 tags: [sweet]
 rating: 8

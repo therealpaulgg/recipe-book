@@ -1,6 +1,6 @@
 ---
 excerpt: Gin and black raspberry Chambord liqueur
-title: Chamber's Bramble
+title: Chambord Bramble
 category: cocktails
 tags: [tart]
 rating: 8

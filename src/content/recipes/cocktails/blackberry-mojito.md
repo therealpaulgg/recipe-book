@@ -21,5 +21,3 @@ directions:
 - Add seltzer water/club soda
 - garnish w/ mint and blackberry
 ---
-
-Some random content below the actual recipe itself
