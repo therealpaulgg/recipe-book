@@ -9,37 +9,37 @@ steps:
   - yarn
   - yarn build
 
-# - name: copyfiles
-#   image: appleboy/drone-scp
-#   settings:
-#     host:
-#       from_secret: HOST
-#     port: 22
-#     key:
-#       from_secret: SSH_KEY
-#     source: build
-#     target: ~/apps/recipe_book
-#     username:
-#       from_secret: USER
-#   when:
-#     branch: 
-#     - main
-#     event: 
-#     - push
+- name: copyfiles
+  image: appleboy/drone-scp
+  settings:
+    host:
+      from_secret: HOST
+    port: 22
+    key:
+      from_secret: SSH_KEY
+    source: build
+    target: ~/apps/recipe_book
+    username:
+      from_secret: USER
+  when:
+    branch: 
+    - main
+    event: 
+    - push
 
-# - name: deploy
-#   image: appleboy/drone-ssh
-#   settings:
-#     host:
-#       from_secret: HOST
-#     port: 22
-#     key:
-#       from_secret: SSH_KEY
-#     username:
-#       from_secret: USER
-#     script: bash ~/apps/recipe_book/deploy.sh
-#   when:
-#     branch:
-#     - main
-#     event:
-#     - push
+- name: deploy
+  image: appleboy/drone-ssh
+  settings:
+    host:
+      from_secret: HOST
+    port: 22
+    key:
+      from_secret: SSH_KEY
+    username:
+      from_secret: USER
+    script: bash ~/apps/recipe_book/deploy.sh
+  when:
+    branch:
+    - main
+    event:
+    - push
