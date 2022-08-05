@@ -2,14 +2,14 @@
 excerpt: Broccoli Beef Stir Fry
 title: Broccoli Beef Stir Fry
 category: cooking
-tags: [sweet]
+tags: [asian]
 
 ingredients:
 - 1 1/4 lbs steak thinly sliced
 - 1 tablespoon + 1 teaspoon peanut oil divided use
 - 2 cups broccoli florets
 - 2 teaspoons minced fresh ginger
-- 1 teaspoon minced garlic
+- 3-4 cloves of garlic
 - 1/4 cup oyster sauce
 - 1/4 cup beef broth or water
 - 1 teaspoon sugar
