@@ -10,8 +10,8 @@ ingredients:
 - 2 tablespoons oil
 - 2 cloves garlic (minced)
 - 2 slices ginger (minced)
-- 2 tablespoons Thai red curry paste
-- 1 cup coconut milk
+- half a can of Thai red curry paste (Maseri please) (2oz?)
+- half a can of coconut milk (13 5/2 = about 7 oz)
 - 1 small bunch choy sum (bok choy)
 - A handful of cilantro
 
@@ -26,5 +26,5 @@ directions:
 - Bring to a simmer and season with salt to taste. 
 - Simmer for 5 minutes and stir in the choy sum. 
 - Cook until the choy sum is wilted and stir in the cilantro. 
-- Serve over rice.
+- Serve with rice.
 ---
