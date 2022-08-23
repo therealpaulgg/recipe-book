@@ -9,6 +9,9 @@ ingredients:
 - salt and pepper to taste
 - 2 tbsp cooking oil divided
 - 2 cups broccoli florets
+- 1/2 yellow bell pepper cut into 1 inch pieces
+- 1/2 red bell pepper cut into 1 inch pieces
+- 1/2 cup baby carrots sliced 
 - 2 tsp minced ginger
 - 2 garlic cloves minced
 
@@ -24,3 +27,4 @@ directions:
 - Whisk stir fry sauce and pour over chicken and vegetables and stir gently to combine.
 - Bring to a boil, stirring occasionally, and let boil for one minute.
 - Serve with rice and/or chow mein if desired.
+---
