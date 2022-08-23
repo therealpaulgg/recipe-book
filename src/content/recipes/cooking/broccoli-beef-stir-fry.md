@@ -2,7 +2,7 @@
 excerpt: Broccoli Beef Stir Fry
 title: Broccoli Beef Stir Fry
 category: cooking
-tags: [asian]
+tags: [asian, stirfry]
 
 ingredients:
 - 1 1/4 lbs steak thinly sliced

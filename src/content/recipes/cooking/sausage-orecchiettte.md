@@ -1,6 +1,6 @@
 ---
-excerpt: orecchiette
-title: orecchiette
+excerpt: Sausage Orecchiette
+title: Sausage Orecchiette
 category: cooking
 tags: [italian, pasta]
 
