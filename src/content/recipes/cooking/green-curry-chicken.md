@@ -5,18 +5,18 @@ category: cooking
 tags: [asian]
 
 ingredients:
-- 1 pound boneless skinless chicken thighs (cut into 1 inch pieces)
-- 2 tablespoons oil
-- half a can of Thai green curry paste (Maseri please) (2oz?)
-- half a can of coconut milk (13 5/2 = about 7 oz)
-- three cloves garlic, chopped
-- two slices of ginger, chopped
+- 1.5 pound boneless skinless chicken thighs (cut into 1 inch pieces)
+- 2-3 tablespoons oil
+- one can of Thai green curry paste (Maseri please) (2oz?)
+- one can of coconut milk (13 5/2 = about 7 oz)
+- four cloves garlic, chopped
+- four slices of ginger, chopped
 - 1 tablespoon fish sauce
 - Thai basil leaves
-- red chili
+- thai chilis (10 to 20)
 - kaffir lime leaves
-- 1 tablespoon palm sugar
-- Chicken stock
+- 1 tablespoon palm sugar (coconut sugar is fine as substitute)
+- Chicken stock (optional, depending on curry thickness & liquid amount)
 
 
 directions:
@@ -26,7 +26,8 @@ directions:
 - add chicken and cook until golden browned
 - add coconut milk and let chicken cook for a few minutes, boiling
 - Add fish sauce while chicken is cooking.
-- add vegetables (thai basil, red chili, kaffir lime leaves)
+- add vegetables (thai basil, thai chili, kaffir lime leaves)
+  - Please note that if you want a spicier curry, add the thai chilis earlier in the cooking process. add later for less spice.
 - Add in chicken broth if the curry is thick to reduce thickness.
 - Add palm sugar
 - Serve with rice.
