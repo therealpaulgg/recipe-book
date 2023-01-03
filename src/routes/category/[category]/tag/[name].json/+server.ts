@@ -1,11 +1,11 @@
-// TODO the process function is broken, but why?????
 import { process } from "$lib/markdown";
 import readingTime from "reading-time";
 
 import fs from "fs";
 import dayjs from "dayjs";
+export const prerender = true;
 
-export function get({ params }): { body: string } {
+export function GET({ params }) {
     const { name, category } = params;
     const recipes = fs
         .readdirSync(`src/content/recipes/${category}`)
@@ -26,7 +26,5 @@ export function get({ params }): { body: string } {
         );
     const body = JSON.stringify(recipes);
 
-    return {
-        body
-    };
+    return new Response(body);
 }

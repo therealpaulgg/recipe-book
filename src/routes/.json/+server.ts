@@ -1,10 +1,10 @@
-// TODO the process function is broken, but why?????
 import { process } from "$lib/markdown";
 import readingTime from "reading-time"
+export const prerender = true;
 
 import fs from "fs";
 
-export function get(): { body: string } {
+export function GET() {
     const categories = fs
         .readdirSync(`src/content/categories`)
         .filter((fileName) => /.+\.md$/.test(fileName))
@@ -18,7 +18,5 @@ export function get(): { body: string } {
         });
     const body = JSON.stringify(categories);
 
-    return {
-        body
-    };
+    return new Response(body);
 }
