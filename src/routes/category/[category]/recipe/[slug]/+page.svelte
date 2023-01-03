@@ -1,26 +1,14 @@
-<script lang="ts" context="module">
-    import { base } from "$app/paths";
-    export async function load({ params, fetch }) {
-        const slug = params.slug;
-        const category = params.category;
-        const recipe = await fetch(`${base}/category/${category}/recipe/${slug}.json`).then((r) =>
-            r.json()
-        );
-        return {
-            props: { recipe }
-        };
-    }
-</script>
-
 <script lang="ts">
-    export let recipe;
+    export let data;
+    let {recipe} = data;
+    $: ({recipe} = data);
     import { faBoxes, faClipboardList, faHammer } from "@fortawesome/free-solid-svg-icons";
     import Icon from "svelte-awesome/components/Icon.svelte";
-    import Card from "../../../../components/Card.svelte";
-    import Step from "../../../../components/Step.svelte";
-    import Back from "../../../../components/Back.svelte";
-    import RatingScale from "../../../../components/RatingScale.svelte";
-    import Rating from "../../../../components/Rating.svelte";
+    import Card from "../../../../../components/Card.svelte";
+    import Step from "../../../../../components/Step.svelte";
+    import Back from "../../../../../components/Back.svelte";
+    import RatingScale from "../../../../../components/RatingScale.svelte";
+    import Rating from "../../../../../components/Rating.svelte";
 </script>
 
 <svelte:head>

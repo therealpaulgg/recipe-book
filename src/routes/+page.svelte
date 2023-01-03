@@ -1,15 +1,8 @@
-<script lang="ts" context="module">
-    import { base } from "$app/paths";
-    export async function load({ fetch }) {
-        const categories = await fetch(`${base}/.json`).then((r) => r.json());
-        return {
-            props: { categories }
-        };
-    }
-</script>
-
 <script lang="ts">
-    export let categories;
+    import { base } from "$app/paths";
+    export let data;
+    let { categories } = data;
+    $: ({ categories } = data);
     import Category from "../components/Category.svelte";
 </script>
 

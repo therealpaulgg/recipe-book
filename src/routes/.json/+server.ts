@@ -1,5 +1,6 @@
 import { process } from "$lib/markdown";
 import readingTime from "reading-time"
+export const prerender = true;
 
 import fs from "fs";
 
@@ -17,7 +18,5 @@ export function GET() {
         });
     const body = JSON.stringify(categories);
 
-    return {
-        body
-    };
+    return new Response(body);
 }

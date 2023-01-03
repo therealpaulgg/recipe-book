@@ -1,8 +1,9 @@
 import { process } from "$lib/markdown";
 import readingTime from "reading-time";
 import fs from "fs";
+export const prerender = true;
 
-export function GET({ params }): { body: string } {
+export function GET({ params }) {
     const { slug, category } = params;
 
     const { metadata, content } = process(`src/content/recipes/${category}/${slug}.md`);
@@ -23,7 +24,8 @@ export function GET({ params }): { body: string } {
 
     const body = JSON.stringify({ metadata, content, readingTime: readingTime(content).text });
 
-    return {
+    
+    return new Response(
         body
-    };
+    );
 }
