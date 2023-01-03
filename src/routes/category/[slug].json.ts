@@ -5,7 +5,7 @@ import readingTime from "reading-time";
 import fs from "fs";
 import dayjs from "dayjs";
 
-export function get({ params }): { body: string } {
+export function GET({ params }): { body: string } {
     const { slug } = params;
     const recipes = fs
         .readdirSync(`src/content/recipes/${slug}`)
