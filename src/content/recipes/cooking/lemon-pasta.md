@@ -22,4 +22,4 @@ directions:
 - Serve with extra parsley and parmesan cheese, if desired.
 ---
 
-Optionally cook chicken on the side, cut it up and mix it in with the pasta.
+Goes great with the lemon chicken recipe. Recommend as a side.

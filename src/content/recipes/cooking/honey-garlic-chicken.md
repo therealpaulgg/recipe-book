@@ -3,6 +3,7 @@ excerpt: Honey Garlic Chicken
 title: Honey Garlic Chicken
 category: cooking
 tags: ["asian fusion"]
+rating: 8
 
 ingredients:
 - 500g / 1 lb chicken breast , boneless and skinless (2 pieces)

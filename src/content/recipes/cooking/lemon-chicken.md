@@ -3,6 +3,7 @@ excerpt: Lemon Chicken
 title: Lemon Chicken
 category: cooking
 tags: [pan, fried, chicken]
+rating: 9
 
 ingredients:
 - 2 chicken breasts (butterflied, or 4 chicken breasts flattened)
@@ -32,3 +33,5 @@ directions:
 - Return chicken to the skillet, spooning the sauce over the chicken. 
 - Garnish with parsley and serve.
 ---
+
+As a side, use the lemon pasta recipe or rice. Broccoli is a good addition as well.
