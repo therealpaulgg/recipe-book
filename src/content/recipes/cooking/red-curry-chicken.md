@@ -3,6 +3,7 @@ excerpt: Red Curry Chicken
 title: Red Curry Chicken
 category: cooking
 tags: [asian]
+rating: 9
 
 ingredients:
 - 1.5 pounds boneless skinless chicken thighs

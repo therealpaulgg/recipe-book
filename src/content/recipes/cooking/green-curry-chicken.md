@@ -3,6 +3,7 @@ excerpt: Green Curry Chicken
 title: Green Curry Chicken
 category: cooking
 tags: [asian]
+rating: 10
 
 ingredients:
 - 1.5 pound boneless skinless chicken thighs (cut into 1 inch pieces)

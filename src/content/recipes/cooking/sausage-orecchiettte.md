@@ -3,6 +3,7 @@ excerpt: Sausage Orecchiette
 title: Sausage Orecchiette
 category: cooking
 tags: [italian, pasta]
+rating: 8
 
 ingredients:
 - 1lb orecchiette pasta
