@@ -1,9 +1,9 @@
 ---
-excerpt: Basic Chicken Stir Fry
+excerpt: An ordinary chicken stir fry with a basic sauce.
 title: Basic Chicken Stir Fry
 category: cooking
 tags: [stirfry]
-rating: 8
+rating: 7
 
 ingredients:
 - 1 lb boneless, skinless chicken breast cut into 1 inch cubes

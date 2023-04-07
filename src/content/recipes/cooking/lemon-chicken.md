@@ -1,5 +1,5 @@
 ---
-excerpt: Lemon Chicken
+excerpt: Nice pan seared chicken with lemon
 title: Lemon Chicken
 category: cooking
 tags: [pan, fried, chicken]

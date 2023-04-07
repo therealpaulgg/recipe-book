@@ -1,5 +1,5 @@
 ---
-excerpt: Sausage Orecchiette
+excerpt: Add more red pepper flakes
 title: Sausage Orecchiette
 category: cooking
 tags: [italian, pasta]

@@ -1,5 +1,5 @@
 ---
-excerpt: Broccoli Beef Stir Fry
+excerpt: Savor a quick and delicious Asian-inspired Broccoli Beef Stir Fry, bursting with tender steak, fresh broccoli, and flavorful sauce.
 title: Broccoli Beef Stir Fry
 category: cooking
 tags: [asian, stirfry]

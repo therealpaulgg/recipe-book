@@ -1,5 +1,5 @@
 ---
-excerpt: Honey Garlic Chicken
+excerpt: something Thomas made
 title: Honey Garlic Chicken
 category: cooking
 tags: ["asian fusion"]
