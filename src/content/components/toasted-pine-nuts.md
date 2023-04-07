@@ -10,3 +10,4 @@ directions:
 - spread nuts in a single layer on a baking pan
 - bake in oven 6-8 minutes or until slightly browned. 
 - shake the pan once or twice to toast the nuts evenly
+---
