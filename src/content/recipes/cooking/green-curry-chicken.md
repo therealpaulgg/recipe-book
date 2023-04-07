@@ -1,5 +1,5 @@
 ---
-excerpt: Green Curry Chicken
+excerpt: the best one
 title: Green Curry Chicken
 category: cooking
 tags: [asian]
