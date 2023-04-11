@@ -11,12 +11,12 @@ ingredients:
 - 2 cups broccoli florets
 - 2 teaspoons minced fresh ginger
 - 3-4 cloves of garlic
-- 1/4 cup oyster sauce
-- 1/4 cup beef broth or water
-- 1 teaspoon sugar
-- 2 teaspoons toasted sesame oil
-- 1 teaspoon soy sauce
-- 1 teaspoon cornstarch
+- 1/2 cup oyster sauce
+- 1/2 cup beef broth or water
+- 2 teaspoon sugar
+- 4 teaspoons toasted sesame oil
+- 2 teaspoon soy sauce
+- 2-3 teaspoons cornstarch
 - salt and pepper to taste
 
 directions:
@@ -30,3 +30,5 @@ directions:
 - Pour the oyster sauce mixture over the beef and vegetables; cook for 30 seconds. Add the cornstarch and bring to a boil; cook for 1 more minute or until sauce has just started to thicken.
 - Serve immediately, with rice if desired.
 ---
+
+notes: I initially had the sauce halved. but i doubled it because it was really not enough.
