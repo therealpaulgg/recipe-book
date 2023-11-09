@@ -8,6 +8,7 @@ export async function GET({ params }) {
 
     const { metadata, content } = process(`src/content/recipes/${category}/${slug}.md`);
 
+    // TODO: this code is a complete disaster.
     const components = fs
         .readdirSync(`src/content/components`)
         .filter((fileName) => /.+\.md$/.test(fileName))
@@ -25,7 +26,7 @@ export async function GET({ params }) {
                 ?.includes(component.metadata.title)
         );
 
-    // dedupe list
+    // TODO: this code is a complete disaster.
     let ingredients = metadata.ingredients;
     const includeComponent = (component) =>
         typeof component === "string" || !component?.excludeFromNutrition;
