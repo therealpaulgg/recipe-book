@@ -6,9 +6,15 @@ export async function load({ params, fetch }) {
         r.json()
     );
 
-    const nutritionFacts = await fetch(`${base}/category/${category}/recipe/${slug}/nutrition.json`).then(
-        (r) => r.json()
-    );
+    const nutritionFacts = await fetch(
+        `${base}/category/${category}/recipe/${slug}/nutrition.json`
+    ).then((r) => r.json());
+
+    recipe.metadata.nutrition = nutritionFacts.nutrition;
+    recipe.metadata.componentContent = recipe.metadata.componentContent.map((component, i) => ({
+        ...component,
+        nutrition: nutritionFacts.components[i]
+    }));
 
     return { recipe };
 }

@@ -12,7 +12,9 @@ ingredients:
 - 0.75oz lime juice
 
 components:
-- Simple Syrup
+- 
+  name: Simple Syrup
+  excludeFromNutrition: true
 
 directions:
 - Pour into a shaker with ice and shake

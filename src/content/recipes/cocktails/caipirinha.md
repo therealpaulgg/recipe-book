@@ -11,7 +11,9 @@ ingredients:
 - 
   name: 2oz cachaça
   link: https://www.totalwine.com/spirits/rum/cachaca/novo-fogo-silver-cachaca/p/117687750
-- lime wheel for garnish
+- 
+  name: lime wheel for garnish
+  excludeFromNutrition: true
 
 directions:
 - In a double rocks glass, muddle the lime wedges and sugar.

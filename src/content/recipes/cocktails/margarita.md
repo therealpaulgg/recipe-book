@@ -12,7 +12,9 @@ ingredients:
 - 0.5oz simple syrup
 
 components:
-- Simple Syrup
+- 
+  name: Simple Syrup
+  excludeFromNutrition: true
 
 directions:
 - Put kosher salt on a plate

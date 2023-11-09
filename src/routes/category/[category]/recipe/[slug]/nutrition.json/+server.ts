@@ -19,34 +19,61 @@ export async function GET({ params }) {
                 readingTime: readingTime(content).text
             };
         })
-        .filter((component) => metadata.components.map(x => typeof x === "string" ? x : x.name)?.includes(component.metadata.title));
+        .filter((component) =>
+            metadata.components
+                ?.map((component) => (typeof component === "string" ? component : component.name))
+                ?.includes(component.metadata.title)
+        );
 
     // dedupe list
     let ingredients = metadata.ingredients;
-    const nutrientsToInclude = metadata.components.filter(x => typeof x === "string" || !x.excludeFromNutrition).map(x => typeof x === "string" ? x : x.name);
-    ingredients.push(...nutrientsToInclude)
+    const includeComponent = (component) =>
+        typeof component === "string" || !component?.excludeFromNutrition;
+    metadata.components
+        ?.filter((x) => includeComponent(x))
+        ?.map((x) => (typeof x === "string" ? x : x.name))
+        ?.map((x) => components.find((y) => y.metadata.title === x))
+        ?.filter((x) => x)
+        ?.forEach((x) => ingredients.push(...x.metadata.ingredients));
     const nutrition = await getMacros(ingredients, metadata);
-    const componentNutrition = await Promise.all(components.map((component) => getMacros(component.metadata.ingredients, component.metadata)))
+    const componentNutrition = await Promise.all(
+        components.map((component) =>
+            !includeComponent(
+                metadata.components?.find((x) =>
+                    x === "string"
+                        ? x === component.metadata.title
+                        : x.name === component.metadata.title
+                )
+            )
+                ? getMacros(component.metadata.ingredients, component.metadata)
+                : null
+        )
+    );
 
-    const data = {nutrition, components: componentNutrition}
+    const data = { nutrition, components: componentNutrition };
 
     return new Response(JSON.stringify(data));
 }
 
-async function getMacros(ingredients: (string | {name: string; excludeFromNutrition: boolean})[], metadata: any) {
-    ingredients = ingredients.filter((x) => {
-        if (typeof x !== "string") {
-            if (x.excludeFromNutrition) {
-                return false;
+async function getMacros(
+    ingredients: (string | { name: string; excludeFromNutrition: boolean })[],
+    metadata: any
+) {
+    ingredients = ingredients
+        .filter((x) => {
+            if (typeof x !== "string") {
+                if (x.excludeFromNutrition) {
+                    return false;
+                }
             }
-        }
-        return true;
-    }).map((x) => {
-        if (typeof x !== "string") {
-            return x.name;
-        }
-        return x;
-    });
+            return true;
+        })
+        .map((x) => {
+            if (typeof x !== "string") {
+                return x.name;
+            }
+            return x;
+        });
 
     const payload = {
         query: ingredients.join("\n"),
@@ -55,6 +82,8 @@ async function getMacros(ingredients: (string | {name: string; excludeFromNutrit
         num_servings: metadata.servings ?? undefined
     };
 
+    // TODO: there is a rate limit of 200 a day. While this might work, consider building a cache layer around this API.
+    // This is still significantly better then Edamam API (500 a month)
     const data = await fetch("https://trackapi.nutritionix.com/v2/natural/nutrients", {
         method: "POST",
         headers: {
@@ -64,10 +93,11 @@ async function getMacros(ingredients: (string | {name: string; excludeFromNutrit
         },
         body: JSON.stringify(payload)
     })
-        .then(response => response.json())
-        .then(data => {
-            const foods: Food[] = data.foods
-            const errors = data.errors
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+            const foods: Food[] = data.foods;
+            const errors = data.errors;
             const simplifiedFoods: SimplifiedFood[] = foods.map((f) => ({
                 name: f.food_name,
                 brand: f.brand_name,
@@ -83,14 +113,14 @@ async function getMacros(ingredients: (string | {name: string; excludeFromNutrit
                 fiber: f.nf_dietary_fiber,
                 sugars: f.nf_sugars,
                 protein: f.nf_protein,
-                potassium: f.nf_potassium,
-            }))
+                potassium: f.nf_potassium
+            }));
             return {
                 foods: simplifiedFoods,
                 errors
-            }
+            };
         })
-        .catch(error => {
+        .catch((error) => {
             console.error(error);
         });
 

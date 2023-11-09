@@ -1,7 +1,7 @@
 <script lang="ts">
     export let data;
-    let {recipe} = data;
-    $: ({recipe} = data);
+    let { recipe } = data;
+    $: ({ recipe } = data);
     import { faBoxes, faClipboardList, faHammer } from "@fortawesome/free-solid-svg-icons";
     import Icon from "svelte-awesome/components/Icon.svelte";
     import Card from "../../../../../components/Card.svelte";
@@ -9,6 +9,7 @@
     import Back from "../../../../../components/Back.svelte";
     import RatingScale from "../../../../../components/RatingScale.svelte";
     import Rating from "../../../../../components/Rating.svelte";
+    import NutritionFacts from "../../../../../components/NutritionFacts.svelte";
 </script>
 
 <svelte:head>
@@ -24,6 +25,11 @@
         <h2 class="m-0">{recipe.metadata.title}</h2>
         <p class="my-1 italic">{recipe.metadata.excerpt}</p>
     </div>
+    {#if recipe.metadata.servings != null}
+        <div class="text-lg flex items-center gap-1 mb-1">
+            <span class="font-bold">Servings: </span>{recipe.metadata.servings}
+        </div>
+    {/if}
     {#if recipe.metadata.rating}
         <Rating rating={recipe.metadata.rating} />
     {/if}
@@ -74,6 +80,10 @@
                                 <Step name={direction} />
                             {/each}
                         </ul>
+                        {#if component.nutrition}<NutritionFacts
+                                nutritionFacts={component.nutrition}
+                            />
+                        {/if}
                     </div>
                 </Card>
             {/each}
@@ -94,6 +104,10 @@
             </ul>
         </div>
     </Card>
+{/if}
+
+{#if recipe.metadata.nutrition}
+    <NutritionFacts nutritionFacts={recipe.metadata.nutrition} />
 {/if}
 
 <div class="my-2">

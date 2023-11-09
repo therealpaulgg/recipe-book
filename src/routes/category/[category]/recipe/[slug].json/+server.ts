@@ -19,7 +19,7 @@ export function GET({ params }) {
                 readingTime: readingTime(content).text
             };
         })
-        .filter((component) => metadata.components?.includes(component.metadata.title));
+        .filter((component) => metadata.components?.map(x => typeof x === "string" ? x : x.name)?.includes(component.metadata.title));
     metadata.componentContent = components
 
     const body = JSON.stringify({ metadata, content, readingTime: readingTime(content).text });

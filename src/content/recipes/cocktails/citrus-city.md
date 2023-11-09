@@ -13,7 +13,9 @@ ingredients:
 - 0.5oz agave nectar/simple syrup
 
 components:
-- Simple Syrup
+- 
+  name: Simple Syrup
+  excludeFromNutrition: true
 
 directions:
 - Pour into a shaker with ice and shake for 30 seconds

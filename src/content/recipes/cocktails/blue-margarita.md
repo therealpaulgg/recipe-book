@@ -10,9 +10,6 @@ ingredients:
 - 1oz Blue Curaco
 - Juice from 1 lime (can be 0.75-1oz, depending on preference)
 
-components:
-- Simple Syrup
-
 directions:
 - Pour into a shaker with ice and shake
 - strain into a glass on the rocks

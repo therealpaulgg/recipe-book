@@ -4,6 +4,7 @@ title: Chicken Tikka Masala
 category: cooking
 tags: [indian, chicken, curry]
 rating: 10
+servings: 6
 
 ingredients:
 - Cooking spray
@@ -18,6 +19,7 @@ ingredients:
 - 1 15-ounce can (425g) crushed tomatoes
 - Water
 - 1 cup (240ml) half & half
+- 6 cups cooked basmati rice
 
 components:
 - Tikka Masala Marinade

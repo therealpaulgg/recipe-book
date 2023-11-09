@@ -12,7 +12,7 @@ ingredients:
 - 1 ½ teaspoons (4g) ground cumin
 - 2 teaspoons (10g) Kosher salt
 - 1 teaspoon (3g) ground black pepper
-- 2 pounds (900g) boneless skinless chicken breast, cut into 1½-inch cubes
+- 2 pounds boneless skinless chicken breast, cut into 1½-inch cubes
 
 directions:
 - In a large bowl, whisk together the yogurt, ginger, garlic, spices, salt, and pepper until combined.

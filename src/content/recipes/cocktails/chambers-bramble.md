@@ -12,7 +12,9 @@ ingredients:
 - 0.5oz Simple Syrup
 
 components:
-- Simple Syrup
+- 
+  name: Simple Syrup
+  excludeFromNutrition: true
 
 directions:
 - Pour into a shaker with ice and shake for 30 seconds
