@@ -5,5 +5,10 @@ export async function load({ params, fetch }) {
     const recipe = await fetch(`${base}/category/${category}/recipe/${slug}.json`).then((r) =>
         r.json()
     );
+
+    const nutritionFacts = await fetch(`${base}/category/${category}/recipe/${slug}/nutrition.json`).then(
+        (r) => r.json()
+    );
+
     return { recipe };
 }
