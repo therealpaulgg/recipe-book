@@ -54,7 +54,7 @@
                     <div class="text-xl font-semibold">Total</div>
                     <div>Serves {servings}</div>
                 </div>
-                <div class="grid grid-cols-4 gap-2 items-center align-top">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-2 items-center align-top">
                     <div class="flex items-center gap-2">
                         <Icon data={faFire} class="text-red-500" />
                         {calculateNutrition(nutritionFacts.foods, "calories")} cal
@@ -107,7 +107,7 @@
                             </div>
                             <div class="font-bold">{food.name}</div>
                         </div>
-                        <div class="grid grid-cols-4 gap-2 items-center">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 items-center">
                             <div class="flex items-center gap-2">
                                 <Icon data={faFire} class="text-red-500" />
                                 <span class="font-medium">{Math.round(food.calories)} cal</span>
