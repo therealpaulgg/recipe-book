@@ -4,13 +4,14 @@ name: recipe-book
 
 steps:
 - name: build
-  image: "oven/bun:latest"
+  image: "node:20.9.0-alpine3.18"
   environment:
     VITE_API_KEY:
       from_secret: VITE_API_KEY
   commands:
-  - bun i
-  - bun run build
+  - npm i -g pnpm
+  - pnpm i
+  - pnpm run build
 
 - name: copyfiles
   image: appleboy/drone-scp
