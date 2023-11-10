@@ -9,8 +9,9 @@
     <input class="form-checkbox rounded w-4 h-4" type="checkbox" {id} />
     {#if typeof ingredient === "string"}
         <label for={id} class="cursor-pointer">{ingredient}</label>
-    {/if}
-    {#if typeof ingredient === "object"}
+    {:else if typeof ingredient === "object" && ingredient.link}
         <a href={ingredient.link} target="_blank"><label class="cursor-pointer">{ingredient.name}</label></a>
+    {:else}
+        <label for={id} class="cursor-pointer">{ingredient.name}</label>
     {/if}
 </div>

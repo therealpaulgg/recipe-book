@@ -5,8 +5,15 @@ category: smoothies
 tags: [protein]
 
 ingredients:
-- 1 scoop Jocko Mölk Chocolate Protein Powder
-- 1 scoop PB2 Protein
+- 
+  name: 1 scoop Jocko Mölk Chocolate Protein Powder
+  nutritionId: 615daab2bb598b0009b92ab8
+  link: https://www.nutritionix.com/i/jocko-molk/chocolate-protein-powder/615daab2bb598b0009b92ab8
+- 
+  name: 1 scoop PB2 Protein
+  nutritionId: 5e8eca117fa1344d4b6b44f1
+  link: https://www.nutritionix.com/i/pb2/plant-powder-peanut-protein/5e8eca117fa1344d4b6b44f1
+  servings: 0.5
 - 1 banana
 - 1-2 cups of ice (to preference)
 

@@ -7,7 +7,9 @@ rating: 7
 
 ingredients:
 - 2oz tequila
-- 1oz Blue Curaco
+- 
+  name: 1oz Blue Curaco
+  nutritionId: 62dffb97bdcecc59c6998162
 - Juice from 1 lime (can be 0.75-1oz, depending on preference)
 
 directions:

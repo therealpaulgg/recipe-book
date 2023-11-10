@@ -14,7 +14,11 @@ ingredients:
   link: https://www.nutritionix.com/i/barilla/protein-plus-penne/65268276c1b69a0008b53f0b
 - 3tbsp light butter
 - 3tbsp flour
-- 2 cups fairlife skim milk
+- 
+  name: 2 cups fairlife skim milk
+  nutritionId: 5badd2dfe65912094203d466
+  link: https://www.nutritionix.com/i/fairlife/skim-milk/5badd2dfe65912094203d466
+  servings: 2
 - 4 chipotle peppers in adobo
 - 1/4 cup whipped cream cheese
 - 1.5 cups low fat cheddar cheese
