@@ -17,7 +17,7 @@
     import Rating from "../components/Rating.svelte";
 </script>
 
-<div class={`bg-zinc-700 shadow-lg h-full rounded  ${hover ? "hover:bg-zinc-500" : ""}`}>
+<div class={`bg-zinc-700 shadow-lg h-full rounded flex flex-col justify-between ${hover ? "hover:bg-zinc-500" : ""}`}>
     <div class={`gap-2 flex flex-col`}>
         {#if recipe.metadata.image}
             <img

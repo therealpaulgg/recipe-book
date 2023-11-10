@@ -5,16 +5,12 @@ import gfm from "remark-gfm";
 import remark2rehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import frontmatter from "remark-frontmatter";
-import highlight from "rehype-highlight";
-import django from "highlight.js/lib/languages/django";
 import yaml from "yaml";
-import dayjs from "dayjs";
 
 const parser = unified().use(parse).use(gfm).use(frontmatter, ["yaml"]);
 
 const runner = unified()
     .use(remark2rehype)
-    .use(highlight, { languages: { django } })
     .use(rehypeStringify);
 
 export function process(filename: string): { metadata: any; content: string } {
