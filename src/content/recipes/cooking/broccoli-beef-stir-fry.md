@@ -4,13 +4,14 @@ title: Broccoli Beef Stir Fry
 category: cooking
 tags: [asian, stirfry]
 rating: 8
+servings: 3
 
 ingredients:
-- 1 1/4 lbs steak thinly sliced
+- 1 1/4 lbs top round steak thinly sliced
 - 1 tablespoon + 1 teaspoon peanut oil divided use
 - 2 cups broccoli florets
 - 2 teaspoons minced fresh ginger
-- 3-4 cloves of garlic
+- 4 cloves garlic
 - 1/2 cup oyster sauce
 - 1/2 cup beef broth or water
 - 2 teaspoon sugar
@@ -18,6 +19,7 @@ ingredients:
 - 2 teaspoon soy sauce
 - 2-3 teaspoons cornstarch
 - salt and pepper to taste
+- 3 cups cooked white rice
 
 directions:
 - Heat 1 teaspoon of oil in a large frying pan over medium heat. Add the broccoli and cook for approximately 4 minutes or until tender.

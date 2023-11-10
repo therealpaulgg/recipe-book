@@ -1,5 +1,6 @@
 import { process } from "$lib/markdown";
-import readingTime from "reading-time"
+import { json } from "@sveltejs/kit";
+
 export const prerender = true;
 
 import fs from "fs";
@@ -13,10 +14,9 @@ export function GET() {
             return {
                 metadata,
                 slug: fileName.slice(0, -3),
-                readingTime: readingTime(content).text
+                content
             };
         });
-    const body = JSON.stringify(categories);
 
-    return new Response(body);
+    return json(categories);
 }

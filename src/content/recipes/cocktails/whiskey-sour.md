@@ -11,7 +11,9 @@ ingredients:
 - 0.75oz simple syrup
 
 components:
-- Simple Syrup
+- 
+  name: Simple Syrup
+  excludeFromNutrition: true
 
 directions:
 - Pour ingredients into a shaker with ice and shake

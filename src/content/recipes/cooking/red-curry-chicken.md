@@ -4,19 +4,20 @@ title: Red Curry Chicken
 category: cooking
 tags: [asian]
 rating: 9
+servings: 6
 
 ingredients:
-- 1.5 pounds boneless skinless chicken thighs
+- 2 pounds boneless skinless chicken thighs
 - salt and pepper
 - 2-3 tablespoons oil
 - 4 cloves garlic (minced)
 - 4 slices ginger (minced)
 - one can of Thai red curry paste (Maseri please) (2oz?)
 - one can of coconut milk (13 5/2 = about 7 oz)
-- 1 small bunch choy sum (bok choy)
+- 1 small bunch bok choy
 - A handful of cilantro
 - thai chilis (10 to 20)
-
+- 6 cups cooked white rice
 
 directions:
 - Season the chicken with salt and pepper. 

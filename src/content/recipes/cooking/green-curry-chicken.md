@@ -4,9 +4,10 @@ title: Green Curry Chicken
 category: cooking
 tags: [asian]
 rating: 10
+servings: 6
 
 ingredients:
-- 1.5 pound boneless skinless chicken thighs (cut into 1 inch pieces)
+- 2 pound boneless skinless chicken thighs (cut into 1 inch pieces)
 - 2-3 tablespoons oil
 - one can of Thai green curry paste (Maseri please) (2oz?)
 - one can of coconut milk (13 5/2 = about 7 oz)
@@ -17,8 +18,8 @@ ingredients:
 - thai chilis (10 to 20)
 - kaffir lime leaves
 - 1 tablespoon palm sugar (coconut sugar is fine as substitute)
-- Chicken stock (optional, depending on curry thickness & liquid amount)
-
+- 1/2 cup chicken stock (optional)
+- 6 cups cooked white rice
 
 directions:
 - add oil to pan

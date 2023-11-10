@@ -4,11 +4,12 @@ title: Sausage Orecchiette
 category: cooking
 tags: [italian, pasta]
 rating: 8
+servings: 5
 
 ingredients:
 - 1lb orecchiette pasta
 - 1lb spicy italian sausage
-- 12-16oz broccoli
+- 12 broccoli
 - 1/2-1 cup chicken stock
 - 1tsp red pepper flakes (or several shakes for 20-30 seconds)
 - 3 cloves garlic, minced

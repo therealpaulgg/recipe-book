@@ -4,17 +4,18 @@ title: Lemon Chicken
 category: cooking
 tags: [pan, fried, chicken]
 rating: 9
+servings: 3
 
 ingredients:
-- 2 chicken breasts (butterflied, or 4 chicken breasts flattened)
+- 1lb chicken breast (butterflied)
 - black pepper
 - 1/3 cup flour
 - 1 tbsp olive oil
 - 4 tbsp butter
-- 2 cloves of garlic
+- 2 cloves garlic, minced
 - 1/2 cup chicken broth
 - 2oz or 3-4tbsp of lemon juice
-- lemon zest (from half of a lemon will do)
+- lemon zest
 - parsley
 
 directions:

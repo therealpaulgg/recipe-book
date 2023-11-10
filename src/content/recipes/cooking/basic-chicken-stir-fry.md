@@ -4,6 +4,7 @@ title: Basic Chicken Stir Fry
 category: cooking
 tags: [stirfry]
 rating: 7
+servings: 3
 
 ingredients:
 - 1 lb boneless, skinless chicken breast cut into 1 inch cubes

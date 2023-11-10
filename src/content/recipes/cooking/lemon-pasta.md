@@ -3,13 +3,15 @@ excerpt: Lemon Pasta
 title: Lemon Pasta
 category: cooking
 tags: [pasta]
+servings: 5
 
 ingredients:
 - 12 ounces spaghetti
 - 3 tablespoons olive oil
 - 2 garlic cloves minced
 - 2 tablespoons fresh parsley plus more for serving
-- Juice and zest of one lemon
+- 2 tbsp lemon juice
+- lemon zest
 - ¼ cup grated parmesan cheese optional
 - Freshly cracked black pepper for serving
 directions:
