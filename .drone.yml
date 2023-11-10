@@ -6,7 +6,8 @@ steps:
 - name: build
   image: "oven/bun:latest"
   environment:
-    VITE_API_KEY: TESTING TESTING TESTING
+    VITE_API_KEY:
+      from_secret: VITE_API_KEY
   commands:
   - bun i
   - bun run build
