@@ -142,7 +142,7 @@ async function getMacros(
         });
 
     const fetchedFoods = await Promise.all(individualLookup.map((x) =>
-        fetch(`http://localhost:3000/api/v1/proxy/item?nix_item_id=${x.nutritionId}`, {
+        fetch(`https://recipeproxy.paulgellai.dev/api/v1/proxy/item?nix_item_id=${x.nutritionId}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
