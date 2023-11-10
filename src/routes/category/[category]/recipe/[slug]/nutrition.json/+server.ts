@@ -2,7 +2,6 @@ import { process } from "$lib/markdown";
 import readingTime from "reading-time";
 import fs from "fs";
 import { json } from "@sveltejs/kit";
-export const prerender = false;
 
 export async function GET({ params }) {
     const { slug, category } = params;
@@ -37,7 +36,7 @@ export async function GET({ params }) {
         ?.map((x) => components.find((y) => y.metadata.title === x))
         ?.filter((x) => x)
         ?.forEach((x) => ingredients.push(...x.metadata.ingredients));
-    const nutrition = await getMacros(ingredients, metadata);
+    const nutrition = await getMacros(ingredients, metadata).catch((e) => null);
     const componentNutrition = await Promise.all(
         components.map((component) =>
             !includeComponent(
@@ -47,7 +46,7 @@ export async function GET({ params }) {
                         : x.name === component.metadata.title
                 )
             )
-                ? getMacros(component.metadata.ingredients, component.metadata)
+                ? getMacros(component.metadata.ingredients, component.metadata).catch((e) => null)
                 : null
         )
     );
@@ -78,8 +77,9 @@ async function getMacros(
     const payload = {
         query: ingredients.join("\n"),
         line_delimited: true,
-        use_raw_foods: true,
-        num_servings: metadata.servings ?? undefined
+        use_raw_foods: true
+        // always fetch '1' serving size. We will calculate serving sizes by doing basic math.
+        // num_servings: metadata.servings ?? undefined
     };
 
     const data = await fetch("https://recipeproxy.paulgellai.dev/api/v1/proxy/nutrition", {
@@ -92,9 +92,12 @@ async function getMacros(
     })
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
+            if (data?.foods == null) {
+                throw new Error(`Missing data from API.\n Details: ${JSON.stringify(data)}\n recipe: ${metadata?.title}\n payload: ${JSON.stringify(payload)}`);
+            }
             const foods: Food[] = data.foods;
             const errors = data.errors;
+
             const simplifiedFoods: SimplifiedFood[] = foods.map((f) => ({
                 name: f.food_name,
                 brand: f.brand_name,

@@ -7,7 +7,7 @@ rating: 10
 
 ingredients:
 - 4 teaspoons sugar
-- 3/4oz lime juice (or 1/2 lime, 1/2 lemon?)
+- 3/4oz lime juice
 - 4oz seltzer water
 - 2oz rum
 - 8-12 blackberries (depending on size)
