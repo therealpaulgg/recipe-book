@@ -43,7 +43,7 @@
         <div slot="excerpt">
             <ul class="mt-2">
                 {#each recipe.metadata.ingredients as ingredient}
-                    <Step name={ingredient} />
+                    <Step ingredient={ingredient} />
                 {/each}
             </ul>
         </div>
@@ -68,7 +68,7 @@
                         </div>
                         <ul class="mt-2">
                             {#each component.metadata.ingredients as ingredient}
-                                <Step name={ingredient} />
+                                <Step ingredient={ingredient} />
                             {/each}
                         </ul>
                         <div class="text-xl font-bold flex items-center gap-3">
@@ -77,7 +77,7 @@
                         </div>
                         <ul class="mt-2">
                             {#each component.metadata.directions as direction}
-                                <Step name={direction} />
+                                <Step ingredient={direction} />
                             {/each}
                         </ul>
                         {#if component.nutrition}<NutritionFacts
@@ -99,7 +99,7 @@
         <div slot="excerpt">
             <ul>
                 {#each recipe.metadata.directions as direction}
-                    <Step name={direction} />
+                    <Step ingredient={direction} />
                 {/each}
             </ul>
         </div>

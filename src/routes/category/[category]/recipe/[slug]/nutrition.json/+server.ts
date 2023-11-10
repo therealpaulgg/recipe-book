@@ -1,7 +1,12 @@
 import { process } from "$lib/markdown";
 import fs from "fs";
 import { json } from "@sveltejs/kit";
-import type { Component, ComponentMetadata, RecipeMetadata } from "src/models/RecipeMetadata";
+import type {
+    Component,
+    ComponentMetadata,
+    Ingredient,
+    RecipeMetadata
+} from "src/models/RecipeMetadata";
 
 export async function GET({ params }) {
     const { slug, category } = params;
@@ -59,13 +64,16 @@ export async function GET({ params }) {
 }
 
 async function getMacros(
-    ingredients: (string | { name: string; excludeFromNutrition: boolean })[],
-    metadata: any
+    ingredients: (string | Ingredient)[],
+    metadata: RecipeMetadata | ComponentMetadata
 ) {
+    const individualLookup = ingredients.filter(
+        (x) => typeof x === "object" && x.nutritionId != null
+    ) as Ingredient[];
     ingredients = ingredients
         .filter((x) => {
             if (typeof x !== "string") {
-                if (x.excludeFromNutrition) {
+                if (x.excludeFromNutrition || x.nutritionId != null) {
                     return false;
                 }
             }
@@ -81,7 +89,8 @@ async function getMacros(
     const payload = {
         query: ingredients.join("\n"),
         line_delimited: true,
-        use_raw_foods: true
+        use_raw_foods: true,
+        use_branded_foods: metadata.brandedFoods ?? undefined
         // always fetch '1' serving size. We will calculate serving sizes by doing basic math.
         // num_servings: metadata.servings ?? undefined
     };
@@ -131,6 +140,53 @@ async function getMacros(
         .catch((error) => {
             console.error(error);
         });
+
+    const fetchedFoods = await Promise.all(individualLookup.map((x) =>
+        fetch(`http://localhost:3000/api/v1/proxy/item?nix_item_id=${x.nutritionId}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`
+            }
+        })
+            .then((r) => r.json())
+            .catch((err) => {
+                console.error(err);
+            })
+    ));
+
+    if (data) {
+        fetchedFoods.forEach((f, i) => {
+            if (f?.foods == null) {
+                throw new Error(
+                    `Missing data from API.\n Details: ${JSON.stringify(f)}\n recipe: ${
+                        metadata?.title
+                    }\n payload: ${JSON.stringify(payload)}`
+                );
+            }
+            const food: Food = f.foods[0];
+            const errors = f.errors;
+            const servings = individualLookup[i].servings ?? 1
+            data.foods.push({
+                name: food.food_name,
+                brand: food.brand_name,
+                servingSize: food.serving_qty * servings,
+                servingUnit: food.serving_unit,
+                servingWeightGrams: food.serving_weight_grams * servings,
+                calories: food.nf_calories * servings,
+                fat: food.nf_total_fat * servings,
+                saturatedFat: food.nf_saturated_fat * servings,
+                cholesterol: food.nf_cholesterol * servings,
+                sodium: food.nf_sodium * servings,
+                carbs: food.nf_total_carbohydrate * servings,
+                fiber: food.nf_dietary_fiber * servings,
+                sugars: food.nf_sugars * servings,
+                protein: food.nf_protein * servings,
+                potassium: food.nf_potassium * servings
+            })
+            if (errors) data.errors.push(...errors)
+        })
+    }
 
     return data;
 }

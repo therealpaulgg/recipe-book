@@ -10,7 +10,11 @@
         faToggleOn,
         faToggleOff,
         faWeight,
-        faRuler
+        faRuler,
+        faCubes,
+        faBacon,
+        faHotdog,
+        faPlateWheat
     } from "@fortawesome/free-solid-svg-icons";
     import Icon from "svelte-awesome/components/Icon.svelte";
     import Card from "./Card.svelte";
@@ -20,7 +24,15 @@
     // Function to calculate nutrition based on serving size
     const calculateNutrition = (
         foods: SimplifiedFood[],
-        nutrient: "calories" | "fat" | "carbs" | "protein"
+        nutrient:
+            | "calories"
+            | "fat"
+            | "carbs"
+            | "protein"
+            | "fiber"
+            | "saturatedFat"
+            | "sugars"
+            | "sodium"
     ) => {
         return Math.round(
             foods.reduce((acc, food) => {
@@ -59,6 +71,22 @@
                         <Icon data={faFish} class="text-pink-300" />
                         {calculateNutrition(nutritionFacts.foods, "protein")}g protein
                     </div>
+                    <div class="flex items-center gap-2">
+                        <Icon data={faPlateWheat} class="text-green-500" />
+                        {calculateNutrition(nutritionFacts.foods, "fiber")}g fiber
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <Icon data={faBacon} class="text-rose-400" />
+                        {calculateNutrition(nutritionFacts.foods, "saturatedFat")}g s. fat
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <Icon data={faCubes} class="text-white" />
+                        {calculateNutrition(nutritionFacts.foods, "sugars")}g sugars
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <Icon data={faHotdog} class="text-amber-500" />
+                        {calculateNutrition(nutritionFacts.foods, "sodium")}mg sodium
+                    </div>
                 </div>
             </div>
         {:else}
@@ -69,7 +97,8 @@
                             <div class="flex gap-2 items-center">
                                 <Icon data={faRuler} />
                                 <span>
-                                    {food.servingSize} {food.servingUnit}
+                                    {food.servingSize}
+                                    {food.servingUnit}
                                 </span>
                             </div>
                             <div class="flex gap-2 items-center">
@@ -81,27 +110,35 @@
                         <div class="grid grid-cols-4 gap-2 items-center">
                             <div class="flex items-center gap-2">
                                 <Icon data={faFire} class="text-red-500" />
-                                <span class="font-medium"
-                                    >{Math.round(food.calories)} cal</span
-                                >
+                                <span class="font-medium">{Math.round(food.calories)} cal</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <Icon data={faDrumstickBite} class="text-amber-600" />
-                                <span class="font-medium"
-                                    >{Math.round(food.fat)}g fat</span
-                                >
+                                <span class="font-medium">{Math.round(food.fat)}g fat</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <Icon data={faBreadSlice} class="text-orange-300" />
-                                <span class="font-medium"
-                                    >{Math.round(food.carbs)}g carbs</span
-                                >
+                                <span class="font-medium">{Math.round(food.carbs)}g carbs</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <Icon data={faFish} class="text-pink-300" />
-                                <span class="font-medium"
-                                    >{Math.round(food.protein)}g protein</span
-                                >
+                                <span class="font-medium">{Math.round(food.protein)}g protein</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <Icon data={faPlateWheat} class="text-green-500" />
+                                <span class="font-medium">{Math.round(food.fiber)}g fiber</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <Icon data={faBacon} class="text-rose-400" />
+                                <span class="font-medium">{Math.round(food.saturatedFat)}g s. fat</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <Icon data={faCubes} class="text-white" />
+                                <span class="font-medium">{Math.round(food.sugars)}g sugars</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <Icon data={faHotdog} class="text-amber-500" />
+                                <span class="font-medium">{Math.round(food.sodium)}mg sodium</span>
                             </div>
                         </div>
                     </li>

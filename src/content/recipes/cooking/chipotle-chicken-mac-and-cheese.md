@@ -4,10 +4,14 @@ title: Chipotle Chicken Mac and Cheese
 category: cooking
 tags: [american]
 rating: 9
-servings: 5
+servings: 6
 
 ingredients:
-- 8oz barilla protein pasta
+- 
+  name: 8oz Barilla Protein plus Penne
+  nutritionId: 65268276c1b69a0008b53f0b
+  servings: 4
+  link: https://www.nutritionix.com/i/barilla/protein-plus-penne/65268276c1b69a0008b53f0b
 - 3tbsp light butter
 - 3tbsp flour
 - 2 cups fairlife skim milk

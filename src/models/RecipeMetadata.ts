@@ -1,6 +1,9 @@
 export type Ingredient = {
     name: string
-    excludeFromNutrition: true
+    excludeFromNutrition?: true
+    nutritionId?: string
+    servings?: number
+    link?: string
 }
 
 export type Component = {
@@ -19,6 +22,7 @@ export type ComponentMetadata = {
     title: string
     ingredients: (string | Ingredient)[]
     directions: string[]
+    brandedFoods?: boolean
 }
 
 export type RecipeMetadata = {
@@ -32,6 +36,7 @@ export type RecipeMetadata = {
     ingredients: (string | Ingredient)[]
     directions: string[]
     componentContent: ComponentContent[]
+    brandedFoods?: boolean
 }
 
 export type Recipe = {
