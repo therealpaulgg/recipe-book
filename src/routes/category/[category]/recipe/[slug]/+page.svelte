@@ -107,7 +107,7 @@
 {/if}
 
 {#if recipe.metadata.nutrition}
-    <NutritionFacts nutritionFacts={recipe.metadata.nutrition} />
+    <NutritionFacts nutritionFacts={recipe.metadata.nutrition} servings={recipe.metadata.servings} />
 {/if}
 
 <div class="my-2">
