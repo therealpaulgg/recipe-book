@@ -1,6 +1,6 @@
 import { process } from "$lib/markdown";
 import readingTime from "reading-time";
-
+import { json } from "@sveltejs/kit";
 import fs from "fs";
 import dayjs from "dayjs";
 export const prerender = true;
@@ -19,7 +19,6 @@ export function GET({ params }) {
             };
         })
         .filter((post) => post.metadata.category && post.metadata.category === slug);
-    const body = JSON.stringify(recipes);
-
-    return new Response(body);
+        
+    return json(recipes);
 }

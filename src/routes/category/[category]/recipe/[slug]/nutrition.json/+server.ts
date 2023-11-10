@@ -1,6 +1,7 @@
 import { process } from "$lib/markdown";
 import readingTime from "reading-time";
 import fs from "fs";
+import { json } from "@sveltejs/kit";
 export const prerender = false;
 
 export async function GET({ params }) {
@@ -51,9 +52,7 @@ export async function GET({ params }) {
         )
     );
 
-    const data = { nutrition, components: componentNutrition };
-
-    return new Response(JSON.stringify(data));
+    return json({ nutrition, components: componentNutrition });
 }
 
 async function getMacros(
@@ -83,14 +82,11 @@ async function getMacros(
         num_servings: metadata.servings ?? undefined
     };
 
-    // TODO: there is a rate limit of 200 a day. While this might work, consider building a cache layer around this API.
-    // This is still significantly better then Edamam API (500 a month)
-    const data = await fetch("https://trackapi.nutritionix.com/v2/natural/nutrients", {
+    const data = await fetch("https://recipeproxy.paulgellai.dev/api/v1/proxy/nutrition", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "x-app-id": import.meta.env.VITE_APP_ID,
-            "x-app-key": import.meta.env.VITE_APP_KEY
+            Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`
         },
         body: JSON.stringify(payload)
     })

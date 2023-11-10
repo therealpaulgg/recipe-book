@@ -1,6 +1,7 @@
 import { process } from "$lib/markdown";
 import readingTime from "reading-time";
 import fs from "fs";
+import { json } from "@sveltejs/kit";
 export const prerender = true;
 
 export function GET({ params }) {
@@ -19,13 +20,12 @@ export function GET({ params }) {
                 readingTime: readingTime(content).text
             };
         })
-        .filter((component) => metadata.components?.map(x => typeof x === "string" ? x : x.name)?.includes(component.metadata.title));
-    metadata.componentContent = components
+        .filter((component) =>
+            metadata.components
+                ?.map((x) => (typeof x === "string" ? x : x.name))
+                ?.includes(component.metadata.title)
+        );
+    metadata.componentContent = components;
 
-    const body = JSON.stringify({ metadata, content, readingTime: readingTime(content).text });
-
-    
-    return new Response(
-        body
-    );
+    return json({ metadata, content, readingTime: readingTime(content).text })
 }
