@@ -82,25 +82,25 @@
                             <div class="flex items-center gap-2">
                                 <Icon data={faFire} class="text-red-500" />
                                 <span class="font-medium"
-                                    >{Math.round(food.calories / servings)} cal</span
+                                    >{Math.round(food.calories)} cal</span
                                 >
                             </div>
                             <div class="flex items-center gap-2">
                                 <Icon data={faDrumstickBite} class="text-amber-600" />
                                 <span class="font-medium"
-                                    >{Math.round(food.fat / servings)}g fat</span
+                                    >{Math.round(food.fat)}g fat</span
                                 >
                             </div>
                             <div class="flex items-center gap-2">
                                 <Icon data={faBreadSlice} class="text-orange-300" />
                                 <span class="font-medium"
-                                    >{Math.round(food.carbs / servings)}g carbs</span
+                                    >{Math.round(food.carbs)}g carbs</span
                                 >
                             </div>
                             <div class="flex items-center gap-2">
                                 <Icon data={faFish} class="text-pink-300" />
                                 <span class="font-medium"
-                                    >{Math.round(food.protein / servings)}g protein</span
+                                    >{Math.round(food.protein)}g protein</span
                                 >
                             </div>
                         </div>
@@ -110,7 +110,7 @@
         {/if}
         <div class="flex items-center mt-4">
             <button
-                class="flex items-center gap-2 p-2 border rounded bg-zinc-700 hover:bg-gray-600"
+                class="flex items-center gap-2 p-2 border rounded bg-zinc-700 hover:bg-zinc-500"
                 on:click={() => (showTotals = !showTotals)}
             >
                 <Icon data={showTotals ? faToggleOff : faToggleOn} scale={1.5} />
