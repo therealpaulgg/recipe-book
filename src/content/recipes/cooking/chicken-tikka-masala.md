@@ -33,8 +33,3 @@ directions:
 - Add half and half, stir, and simmer for 3 more minutes.
 - Season to taste with salt and serve immediately with 1 cup of rice per plate. Garnish with cilantro leaves.
 ---
-
-calories: 470  
-protein: 48g  
-carbs: 63g  
-fat: 11g  

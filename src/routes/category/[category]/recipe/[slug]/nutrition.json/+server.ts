@@ -1,23 +1,27 @@
 import { process } from "$lib/markdown";
-import readingTime from "reading-time";
 import fs from "fs";
 import { json } from "@sveltejs/kit";
+import type { Component, ComponentMetadata, RecipeMetadata } from "src/models/RecipeMetadata";
 
 export async function GET({ params }) {
     const { slug, category } = params;
 
-    const { metadata, content } = process(`src/content/recipes/${category}/${slug}.md`);
+    const { metadata, content }: { metadata: RecipeMetadata; content: string } = process(
+        `src/content/recipes/${category}/${slug}.md`
+    );
 
     // TODO: this code is a complete disaster.
     const components = fs
         .readdirSync(`src/content/components`)
         .filter((fileName) => /.+\.md$/.test(fileName))
         .map((fileName) => {
-            const { metadata, content } = process(`src/content/components/${fileName}`);
+            const { metadata, content }: { metadata: ComponentMetadata; content: string } = process(
+                `src/content/components/${fileName}`
+            );
             return {
                 metadata,
                 slug: fileName.slice(0, -3),
-                readingTime: readingTime(content).text
+                content
             };
         })
         .filter((component) =>
@@ -28,7 +32,7 @@ export async function GET({ params }) {
 
     // TODO: this code is a complete disaster.
     let ingredients = metadata.ingredients;
-    const includeComponent = (component) =>
+    const includeComponent = (component: string | Component) =>
         typeof component === "string" || !component?.excludeFromNutrition;
     metadata.components
         ?.filter((x) => includeComponent(x))
@@ -41,7 +45,7 @@ export async function GET({ params }) {
         components.map((component) =>
             !includeComponent(
                 metadata.components?.find((x) =>
-                    x === "string"
+                    typeof x === "string"
                         ? x === component.metadata.title
                         : x.name === component.metadata.title
                 )
@@ -93,7 +97,11 @@ async function getMacros(
         .then((response) => response.json())
         .then((data) => {
             if (data?.foods == null) {
-                throw new Error(`Missing data from API.\n Details: ${JSON.stringify(data)}\n recipe: ${metadata?.title}\n payload: ${JSON.stringify(payload)}`);
+                throw new Error(
+                    `Missing data from API.\n Details: ${JSON.stringify(data)}\n recipe: ${
+                        metadata?.title
+                    }\n payload: ${JSON.stringify(payload)}`
+                );
             }
             const foods: Food[] = data.foods;
             const errors = data.errors;

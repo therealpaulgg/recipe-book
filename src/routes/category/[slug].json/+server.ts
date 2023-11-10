@@ -1,5 +1,4 @@
 import { process } from "$lib/markdown";
-import readingTime from "reading-time";
 import { json } from "@sveltejs/kit";
 import fs from "fs";
 import dayjs from "dayjs";
@@ -15,7 +14,7 @@ export function GET({ params }) {
             return {
                 metadata,
                 slug: fileName.slice(0, -3),
-                readingTime: readingTime(content).text
+                content
             };
         })
         .filter((post) => post.metadata.category && post.metadata.category === slug);

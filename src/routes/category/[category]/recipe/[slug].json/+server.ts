@@ -1,23 +1,25 @@
 import { process } from "$lib/markdown";
-import readingTime from "reading-time";
 import fs from "fs";
 import { json } from "@sveltejs/kit";
+import type { ComponentMetadata, RecipeMetadata } from "src/models/RecipeMetadata.js";
 export const prerender = true;
 
 export function GET({ params }) {
     const { slug, category } = params;
 
-    const { metadata, content } = process(`src/content/recipes/${category}/${slug}.md`);
+    const { metadata, content }: { metadata: RecipeMetadata; content: string } = process(
+        `src/content/recipes/${category}/${slug}.md`
+    );
 
     const components = fs
         .readdirSync(`src/content/components`)
         .filter((fileName) => /.+\.md$/.test(fileName))
         .map((fileName) => {
-            const { metadata, content } = process(`src/content/components/${fileName}`);
+            const { metadata, content }: {metadata: ComponentMetadata; content: string} = process(`src/content/components/${fileName}`);
             return {
                 metadata,
-                slug: fileName.slice(0, -3),
-                readingTime: readingTime(content).text
+                content,
+                slug: fileName.slice(0, -3)
             };
         })
         .filter((component) =>
@@ -27,5 +29,5 @@ export function GET({ params }) {
         );
     metadata.componentContent = components;
 
-    return json({ metadata, content, readingTime: readingTime(content).text })
+    return json({ metadata, content });
 }
