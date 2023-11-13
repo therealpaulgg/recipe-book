@@ -56,7 +56,7 @@
             <Icon data={faHammer} scale={1.75} /> Components
         </div>
         <div slot="excerpt" class="grid lg:grid-cols-2">
-            {#each recipe.metadata.componentContent as component}
+            {#each recipe.metadata.componentContent as component, index}
                 <Card nested>
                     <div slot="title">
                         <h2 class="m-0">{component.metadata.title}</h2>
@@ -82,6 +82,7 @@
                         </ul>
                         {#if component.nutrition}<NutritionFacts
                                 nutritionFacts={component.nutrition}
+                                servings={recipe.metadata.components[index].servings}
                             />
                         {/if}
                     </div>
