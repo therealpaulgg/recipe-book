@@ -16,5 +16,7 @@ export async function load({ params, fetch }) {
         nutrition: nutritionFacts.components[i]
     }));
 
+    console.log(recipe.metadata.components)
+
     return { recipe };
 }

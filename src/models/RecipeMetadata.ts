@@ -9,6 +9,7 @@ export type Ingredient = {
 export type Component = {
     name: string
     excludeFromNutrition: true
+    servings?: number
 }
 
 export type ComponentContent = {
