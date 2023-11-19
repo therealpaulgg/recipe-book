@@ -25,9 +25,9 @@ directions:
 - Add half the garlic, paprika, black pepper, and sriracha to chicken, mix well.
 - Put half the oil in the pan and heat to medium high.
 - Cook chicken for 8 minutes.
-- Once chicken is cooked, lower the heat and add honey. cook for a bit longer and remove chicken from pan
-- Add the rest of the oil to the pan.
-- Add additional minced garlic, red pepper, and onion to a pan and cook for five minutes.
+- Once chicken is cooked, lower the heat and add honey & half the soy sauce. cook for a bit longer and remove chicken from pan
+- Add rest of oil (0.5tbsp) to the pan and heat to medium high.
+- Add additional minced garlic, red pepper, and red onion to a pan and cook for five minutes.
 - add rice and chicken
-- add additional soy sauce, honey, and sesame seeds
+- add additional soy sauce, honey, green onion, and sesame seeds
 ---
