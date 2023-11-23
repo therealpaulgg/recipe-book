@@ -12,7 +12,9 @@ ingredients:
 - 1tsp crushed red pepper
 - 1/2tsp kosher salt
 - 1/4tsp allspice
-- 2tbsp dark brown sugar
+- 
+  name: 2tbsp swerve brown sugar
+  nutritionId: 5bee6cab48985258599d8e93
 - 1tbsp extra virgin olive oil
 - 12 eggs
 
