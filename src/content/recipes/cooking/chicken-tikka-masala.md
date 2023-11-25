@@ -2,7 +2,7 @@
 excerpt: A delicious and creamy Chicken Tikka Masala recipe that's quick and easy to make.
 title: Chicken Tikka Masala
 category: cooking
-tags: [indian, chicken, curry]
+tags: [indian, chicken, curry, lowcal, protein]
 rating: 10
 servings: 6
 

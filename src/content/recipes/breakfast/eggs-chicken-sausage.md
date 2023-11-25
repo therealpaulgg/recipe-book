@@ -25,3 +25,5 @@ directions:
 - Cook the sausage until crispy brown
 - Add eggs directly to the pan and mix everything
 ---
+
+Note: I am not a fan of how sweet this sausage is. going to make an alternative with more spicy chicken sausage.

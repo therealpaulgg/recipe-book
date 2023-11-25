@@ -2,11 +2,12 @@
 excerpt: A flavorful oven baked salmon recipe, perfect for a quick and delicious dinner.
 title: Oven Baked Salmon
 category: cooking
-tags: [salmon, ovenbaked]
+tags: [salmon, ovenbaked, protein]
 rating: 9
+servings: 4
 
 ingredients:
-- 4-5 salmon fillets (about 6 ounces each, roughly 1.5-2 pounds total)
+- 2lbs salmon filets
 - 2 tbsp olive oil
 - 1/2 tsp salt, or to taste
 - 1/4 tsp cracked black pepper (just a pinch if using finely ground black pepper)

@@ -2,7 +2,7 @@
 title: Healthy Honey Garlic Chicken
 excerpt: instagram recipe
 category: cooking
-tags: [asian, lowcal]
+tags: [asian, lowcal, protein]
 servings: 5
 
 ingredients:

@@ -2,7 +2,7 @@
 excerpt: Very good meal prep mac and cheese
 title: Chipotle Chicken Mac and Cheese
 category: cooking
-tags: [american, lowcal]
+tags: [american, lowcal, protein]
 rating: 9
 servings: 6
 
