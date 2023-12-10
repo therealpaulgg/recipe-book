@@ -1,5 +1,5 @@
 ---
-excerpt: Protein Optimized Eggs & Chicken Sausage
+excerpt: Protein Optimized Eggs & Spicy Chicken Sausage
 title: Eggs & Chicken Sausage
 category: breakfast
 tags: [eggs, sausage]
@@ -7,15 +7,17 @@ servings: 4
 
 ingredients:
 - 1lb extra lean ground chicken
+- 2 cloves garlic, minced
 - 2tsp black pepper
-- 1tsp smoked paprika
+- 2tsp salt
+- 1 tbsp chili powder
+- 2 tbsp paprika
+- 1 tsp ground cumin
 - 1tsp crushed red pepper
-- 1/2tsp kosher salt
-- 1/4tsp allspice
-- 
-  name: 2tbsp swerve brown sugar
-  nutritionId: 5bee6cab48985258599d8e93
-- 1tbsp extra virgin olive oil
+- 1 tsp oregano
+- 1 tsp thyme
+- 1 tsp onion powder
+- 1/2 tsp garlic powder
 - 12 eggs
 
 directions:
