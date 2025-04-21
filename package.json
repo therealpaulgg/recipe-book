@@ -50,7 +50,7 @@
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
     "sass": "^1.50.1",
-    "svelte-adapter-bun": "^0.5.1",
+    "svelte-adapter-bun": "^0.5.2",
     "svelte-awesome": "^3.2.1",
     "to-vfile": "^7.2.3",
     "unified": "^10.1.1",
