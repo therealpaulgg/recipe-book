@@ -7,5 +7,5 @@
 
 <div class="max-w-[80px] text-center">
     <div>Rating: {rating}</div>
-    <div class="w-full border-b-2" style={`border-color: ${color}`} />
+    <div class="w-full border-b-2" style={`border-color: ${color}`}></div>
 </div>

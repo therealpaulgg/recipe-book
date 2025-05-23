@@ -1,14 +1,5 @@
-<script lang="ts" context="module">
-    import { base } from "$app/paths";
-    export async function load({ fetch }) {
-        const categories = await fetch(`${base}/index.json`).then((r) => r.json());
-        return {
-            props: { categories }
-        };
-    }
-</script>
-
 <script lang="ts">
+    import { base } from "$app/paths";
     export let category;
     export let hover: boolean = false;
 </script>

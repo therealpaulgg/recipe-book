@@ -3,7 +3,6 @@
     export let data;
     let { recipes, slug } = data;
     $: ({ recipes, slug } = data);
-    export let name;
     import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
     import Icon from "svelte-awesome/components/Icon.svelte";
     import Recipe from "../../../components/Recipe.svelte";
