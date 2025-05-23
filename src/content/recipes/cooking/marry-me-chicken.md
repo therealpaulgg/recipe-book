@@ -6,7 +6,7 @@ tags: [chicken, italian, creamy]
 servings: 4
 
 ingredients:
-- 3 large chicken breasts boneless and skinless, sliced lengthwise into thin cutlets
+- 3 large chicken breasts boneless and skinless
 - ½ teaspoon salt
 - ¼ teaspoon ground black pepper
 - 6 tablespoons all-purpose flour
