@@ -8,7 +8,9 @@ servings: 21
 ingredients:
 - 1/2 pound sharp cheddar cheese, shredded
 - 16 ounces low fat cottage cheese
-- 1 pack of bacon, cooked and chopped
+- name: 1 pack center cut bacon
+  nutritionId: 51c35b7497c3e69de4b0037c
+  servings: 7
 - 12 eggs
 - Red peppers, chopped (optional)
 - Mushrooms, sliced (optional)
