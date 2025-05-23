@@ -1,3 +1,6 @@
+import forms from '@tailwindcss/forms';
+
+/** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{html,svelte,js,ts}'],
 	theme: {
@@ -8,6 +11,6 @@ export default {
 		}
 	},
 	plugins: [
-		require("@tailwindcss/custom-forms")
+		forms
 	]
 };
