@@ -10,6 +10,7 @@ declare module 'svelte-awesome/components/Icon.svelte' {
         flip?: 'horizontal' | 'vertical';
         label?: string;
         self?: any;
+        class?: string;
     }
     
     export default class Icon extends SvelteComponentTyped<IconProps> {}
