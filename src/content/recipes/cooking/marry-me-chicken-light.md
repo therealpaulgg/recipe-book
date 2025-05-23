@@ -20,7 +20,7 @@ ingredients:
 - 1 teaspoon chili flakes
 - ¼ teaspoon oregano
 - ¼ teaspoon thyme
-- ⅓ cup sundried tomatoes chopped (not packed in oil)
+- ⅓ cup sundried tomatoes chopped
 - 1 tablespoon fresh basil leaves
 - 1 cup cherry tomatoes halved
 - 1 cup baby spinach
