@@ -10,7 +10,7 @@
     {#if typeof ingredient === "string"}
         <label for={id} class="cursor-pointer">{ingredient}</label>
     {:else if typeof ingredient === "object" && ingredient.link}
-        <a href={ingredient.link} target="_blank"><label class="cursor-pointer">{ingredient.name}</label></a>
+        <a href={ingredient.link} target="_blank" class="cursor-pointer">{ingredient.name}</a>
     {:else}
         <label for={id} class="cursor-pointer">{ingredient.name}</label>
     {/if}
