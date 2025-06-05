@@ -19,7 +19,9 @@ ingredients:
     - 1/4 cup (50g) granulated sugar
     - 1 large egg
     - 2 teaspoons vanilla extract
-    - 1 cup (170g) chocolate chips
+    - name: Ghirardelli Semi-Sweet Chocolate Premium Baking Chips
+      nutritionId: 587f13b49bd8ef180ad5cbd5
+      servings: 11.5
     - sea salt for sprinkling optional
 
 directions:
