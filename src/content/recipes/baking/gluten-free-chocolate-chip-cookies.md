@@ -6,7 +6,10 @@ tags: [cookies, gluten-free, chocolate, dessert]
 servings: 24
 
 ingredients:
-    - 1 1/3 cups (200g) gluten-free measure-for-measure flour
+    - 
+      name: gluten-free measure-for-measure flour
+      nutritionId: 652a76a618925800087206cf
+      servings: 5.3
     - 1/4 cup (25g) almond flour
     - 1 teaspoon baking soda
     - 1/2 teaspoon kosher salt
