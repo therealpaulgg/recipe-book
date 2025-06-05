@@ -1,5 +1,5 @@
 ---
-excerpt: Classic chocolate chip cookies using Ghirardelli Bittersweet 60% Cacao Baking Chips
+excerpt: Classic chocolate chip cookies using Ghirardelli Semi-Sweet Premium Baking Chips
 title: Ghirardelli Chocolate Chip Cookies
 category: baking
 tags: [dessert, cookies, chocolate]
