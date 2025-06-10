@@ -27,4 +27,4 @@ directions:
 - Serve immediately while hot.
 ---
 
-notes: The gochujang provides authentic Korean heat - adjust amount based on your spice preference. Brown stevia can be substituted with brown sugar if preferred.
+notes: The gochujang provides authentic Korean heat - adjust amount based on your spice preference. Brown suga can be substituted with brown stevia if you are extra stingy on calories.

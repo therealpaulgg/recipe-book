@@ -14,7 +14,7 @@ ingredients:
 - 30g brown sugar
 
 directions:
-- In a saucepan, combine soy sauce, water, ketchup, gochujang, rice vinegar, honey, and brown stevia.
+- In a saucepan, combine soy sauce, water, ketchup, gochujang, rice vinegar, honey, and brown sugar.
 - Heat the mixture over medium heat, stirring constantly until it thickens to a glossy glaze consistency.
 - Use immediately to coat your cooked chicken or protein of choice.
 ---
