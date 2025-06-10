@@ -21,10 +21,10 @@ directions:
 - Season chicken pieces with black pepper and a splash of soy sauce. Beat the egg and coat the chicken pieces.
 - In a large container, add 40g cornflour and the seasoned chicken pieces.
 - Add the lid and shake the chicken until fully coated with cornflour.
-- Air fry at 200°C for 10-12 minutes (or oven bake at 210°C for 10-14 minutes) until golden and cooked through.
+- Air fry at 400°F for 10-12 minutes (or oven bake at 400°F for 10-14 minutes) until golden and cooked through.
 - While chicken is cooking, prepare the Korean Glaze according to its recipe.
 - Add the cooked chicken to the prepared glaze and toss until well coated.
 - Serve immediately while hot.
 ---
 
-notes: The gochujang provides authentic Korean heat - adjust amount based on your spice preference. Brown suga can be substituted with brown stevia if you are extra stingy on calories.
+notes: The gochujang provides authentic Korean heat - adjust amount based on your spice preference. Brown sugar can be substituted with brown stevia if you are extra stingy on calories.
