@@ -61,7 +61,7 @@
     <div class="grid lg:grid-cols-2 gap-4 mt-4">
         {#each sortedRecipes as recipe}
             <a
-                href={`${base}/category/${slug}/recipe/${recipe.slug}${sortBy !== 'title' ? `?sort=${sortBy}` : ''}`}
+                href={`${base}/category/${slug}/recipe/${recipe.slug}`}
                 class="hover:text-white no-underline"
             >
                 <Recipe category={slug} {recipe} hover />
