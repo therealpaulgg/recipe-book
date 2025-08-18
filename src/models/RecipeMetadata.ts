@@ -43,4 +43,5 @@ export type RecipeMetadata = {
 export type Recipe = {
     metadata: RecipeMetadata
     content: string
+    slug: string
 }
