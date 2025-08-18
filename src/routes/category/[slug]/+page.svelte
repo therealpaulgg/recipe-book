@@ -1,5 +1,7 @@
 <script lang="ts">
     import { base } from "$app/paths";
+    import { page } from "$app/stores";
+    import { goto } from "$app/navigation";
     export let data;
     let { recipes, slug } = data;
     $: ({ recipes, slug } = data);
@@ -9,7 +11,17 @@
     import Back from "../../../components/Back.svelte";
     import RatingScale from "../../../components/RatingScale.svelte";
 
-    let sortBy = 'title';
+    $: sortBy = $page.url.searchParams.get('sort') || 'title';
+
+    function updateSort(newSort: string) {
+        const url = new URL($page.url);
+        if (newSort === 'title') {
+            url.searchParams.delete('sort');
+        } else {
+            url.searchParams.set('sort', newSort);
+        }
+        goto(url, { replaceState: true });
+    }
 
     $: sortedRecipes = [...recipes].sort((a, b) => {
         switch (sortBy) {
@@ -33,7 +45,7 @@
 
 <div class="mb-4">
     <label for="sort-select" class="block text-md font-medium">Sort by:</label>
-    <select id="sort-select" bind:value={sortBy} class="px-3 py-2 border border-zinc-700 rounded-md bg-zinc-700 text-white focus:outline-zinc-500">
+    <select id="sort-select" value={sortBy} on:change={(e) => updateSort(e.currentTarget.value)} class="px-3 py-2 border border-zinc-700 rounded-md bg-zinc-700 text-white focus:outline-zinc-500">
         <option value="title">Title (A-Z)</option>
         <option value="rating">Rating (High to Low)</option>
     </select>
