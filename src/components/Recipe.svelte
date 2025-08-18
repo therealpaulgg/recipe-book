@@ -31,7 +31,7 @@
 
     <div class="bg-zinc-600 min-h-[32px] rounded-b">
         {#if recipe.metadata.tags}
-            <div class="flex gap-4 p-1">
+            <div class="flex gap-2 p-1 flex-wrap">
                 {#each recipe.metadata.tags as name}
                     <Tag {category} {name} />
                 {/each}
