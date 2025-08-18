@@ -1,20 +1,26 @@
 <script lang="ts">
     import { base } from "$app/paths";
-    import { page } from "$app/stores";
     import { goto } from "$app/navigation";
+    import { onMount } from "svelte";
     export let data;
     let { recipes, slug } = data;
     $: ({ recipes, slug } = data);
-    import { faArrowLeft, faChevronDown } from "@fortawesome/free-solid-svg-icons";
-    import Icon from "svelte-awesome/components/Icon.svelte";
     import Recipe from "../../../components/Recipe.svelte";
     import Back from "../../../components/Back.svelte";
     import RatingScale from "../../../components/RatingScale.svelte";
 
-    $: sortBy = $page.url.searchParams.get('sort') || 'title';
+    let sortBy = 'title';
+
+    onMount(() => {
+        if (typeof window !== 'undefined') {
+            const urlParams = new URLSearchParams(window.location.search);
+            sortBy = urlParams.get('sort') || 'title';
+        }
+    });
 
     function updateSort(newSort: string) {
-        const url = new URL($page.url);
+        sortBy = newSort;
+        const url = new URL(window.location.href);
         if (newSort === 'title') {
             url.searchParams.delete('sort');
         } else {
@@ -55,7 +61,7 @@
     <div class="grid lg:grid-cols-2 gap-4 mt-4">
         {#each sortedRecipes as recipe}
             <a
-                href={`${base}/category/${slug}/recipe/${recipe.slug}`}
+                href={`${base}/category/${slug}/recipe/${recipe.slug}${sortBy !== 'title' ? `?sort=${sortBy}` : ''}`}
                 class="hover:text-white no-underline"
             >
                 <Recipe category={slug} {recipe} hover />
