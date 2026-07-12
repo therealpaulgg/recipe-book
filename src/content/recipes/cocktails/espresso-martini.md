@@ -3,16 +3,17 @@ excerpt: Espresso Martini
 title: Espresso Martini
 category: cocktails
 tags: [coffee, espresso]
-rating: 8
+rating: 10
 
 ingredients:
-- 2z vodka
-- 0.5oz Kahlua or Mr. Black
+- 1oz vodka (absolut vanilla is good too)
+- 1oz cantera negra
 - 1oz espresso
+- 0.5oz simple syrup (optional)
 
 directions:
 - Pour into a shaker with ice and shake
 - Strain into a martini glass (and the AI says to add coffee beans)
 ---
 
-Good but the Carajillo is better.
+fixed, it is better than Carajillo after the cantera negra
